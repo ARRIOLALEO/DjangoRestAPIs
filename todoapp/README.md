@@ -4,7 +4,8 @@ this app is develop to practice the basic creation os RestApp with a react backe
 in order to provide an undestanding of the best practices
 
 ## basic structure
-
+.. code::
+.
 +-- todo
 |  +--FrontEnd
 |    +--React
