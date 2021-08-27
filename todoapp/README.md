@@ -6,7 +6,7 @@ in order to provide an undestanding of the best practices
 ## basic structure
 
 +-- todo
-  +--FrontEnd
-    +--React
-  +--Backend
-    +--Django
+|  +--FrontEnd
+|    +--React
+|  +--Backend
+|    +--Django
