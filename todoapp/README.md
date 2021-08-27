@@ -15,4 +15,20 @@ in order to provide an undestanding of the best practices
 └── README.md
 ...
 
+### install the virtual env for our backe end 
+
+- pipenv install django
+
+ in order to run our virtual environment we need to run the command 
+ 
+- pipenv shell
+
+now we have to see (backend)$ .. here is your root now we are alredy in our environment
+
+now we have installed our Django nexts steps are:
+
+- django-admin startproject config
+- python manage.py startapp todos
+- python manage.py  migrate
+
 
