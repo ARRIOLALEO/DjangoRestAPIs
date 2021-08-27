@@ -5,7 +5,20 @@
 
 for the first APP we will check one of the most famous app the TODO app a simple app that will track activites that we need to realize
 
-- ### [BackEnd Django and Rest Framework](https://github.com/ARRIOLALEO/DjangoRestAPIs/)
+- ### [BackEnd Django and Rest Framework](https://github.com/ARRIOLALEO/DjangoRestAPIs/tree/main/todoapp/backend)
 - ### [FrontEnd React](https://github.com/ARRIOLALEO/DjangoRestAPIs/)
+
+
+## basic structure
+
+
+```bash
+.
+├── Backend
+│   └── django.py
+├── frontEnd
+│   └── react.js
+└── README.md
+```
 
 ## this is the second app
