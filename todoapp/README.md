@@ -13,8 +13,7 @@ in order to provide an undestanding of the best practices
 ├── frontEnd
 │   └── react.js
 └── README.md
-...
-
+```
 ### install the virtual env for our backe end 
 
 - pipenv install django
