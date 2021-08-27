@@ -6,11 +6,13 @@ in order to provide an undestanding of the best practices
 ## basic structure
 
 
+```bash
 .
 ├── Backend
 │   └── django.py
 ├── frontEnd
 │   └── react.js
 └── README.md
+...
 
 
