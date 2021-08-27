@@ -34,4 +34,8 @@ first we create a new project, and we add a new application that is our todos an
 we called migrate that create all the tables with this command we run all the SQL queries by defaul
 django will install SQLite 
 
+### the instaltion of rest_framework is needed
+
+-pipenv install djangorestframework
+
 
