@@ -30,4 +30,8 @@ now we have installed our Django nexts steps are:
 - python manage.py startapp todos
 - python manage.py  migrate
 
+first we create a new project, and we add a new application that is our todos and to the end
+we called migrate that create all the tables with this command we run all the SQL queries by defaul
+django will install SQLite 
+
 
