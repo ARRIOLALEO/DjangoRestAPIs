@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(081s#(0j#__os^0es(f_6)9f25mfxgg4b$6t=pxb@%j=lm^uv'
+SECRET_KEY = 'django-insecure-(n&rjyt$#d#_j9_e!83xhf^u#$b0vixe5rp6)ek7s^w(#ae7g-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #3party aps
+    #3 party apos
     'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders',
+    'dj_rest_auth',
     #local apps
     'posts',
 ]
@@ -55,10 +57,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES' :[
-        'rest_framework.permissions.AllowAny',
-    ]
+REST_FRAMEWORK ={
+    'DEFAUTL_PERMISSION_CLASSES':[
+        'rest_framework.permisions.AllowAny',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
 }
 
 CORS_ORIGIN_WHITELIST =(
