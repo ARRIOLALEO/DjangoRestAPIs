@@ -1,14 +1,11 @@
-from rest_framework import generics, permissions
-from .serializers import PostSerializers
+from rest_framework import generics
 from .models import Post
-# Create your views here.
+from .serializers import  PostSerializers
 
-class ShowAllPostAPIView(generics.ListAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+class ShowAllThePost(generics.ListAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializers
 
-class PostCrudAPIView(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+class CrudPost(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializers

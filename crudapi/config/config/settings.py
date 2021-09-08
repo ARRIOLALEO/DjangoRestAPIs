@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(n&rjyt$#d#_j9_e!83xhf^u#$b0vixe5rp6)ek7s^w(#ae7g-'
+SECRET_KEY = 'django-insecure-_2c**=br52noz)+j+6d!sa7p3d6=ee!0q9-dwku+a4$+b!tq0a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,13 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #3 party apos
+    #3party apps
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
     'dj_rest_auth',
     #local apps
     'posts',
+
 ]
 
 MIDDLEWARE = [
@@ -56,20 +57,18 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+CORS_ORIGIN_WHITELIST =(
+    'http://localhost:8000',
+)
 REST_FRAMEWORK ={
-    'DEFAUTL_PERMISSION_CLASSES':[
-        'rest_framework.permisions.AllowAny',
+    'DEFAULT_PERMISSION_CLASSES':[
+        'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES':[
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
-    ],
+    ]
 }
-
-CORS_ORIGIN_WHITELIST =(
-    'http://localhost:8000',
-)
 
 ROOT_URLCONF = 'config.urls'
 
