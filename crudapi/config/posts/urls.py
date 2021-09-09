@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import CrudPost, ShowAllThePost
+from .views import CrudPostAPIView, ShowAllPostAPIView
+
 
 urlpatterns =[
-    path('<int:pk>/',CrudPost.as_view()),
-    path('',ShowAllThePost.as_view()),
+    path('<int:pk>/',CrudPostAPIView.as_view()),
+    path('',ShowAllPostAPIView.as_view()),
 ]
