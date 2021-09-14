@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     #3party apps
     'rest_framework',
-    'rest_framework.authoken'
+    'rest_framework.authtoken',
     'dj_rest_auth',
     'dj_rest_auth.registration',
     'corsheaders',
@@ -49,7 +50,7 @@ INSTALLED_APPS = [
     #local apps
     'products',
 ]
-
+SITE_ID =1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
