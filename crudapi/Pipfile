@@ -10,6 +10,9 @@ django-cors-headers = "*"
 dj-rest-auth = "*"
 django-allauth = "*"
 pillow = "*"
+pyyaml = "*"
+uritemplate = "*"
+drf-yasg = "*"
 
 [dev-packages]
 
